@@ -1,0 +1,17 @@
+__author__ = 'sony'
+
+#Scissors Class
+class Scissors():
+    nValue=3 #Scissor object is assigned 3
+
+    def cmp(self, other): #cmp method to compare the three different gestures
+        nDiff=other.nValue-self.nValue
+        if(nDiff%3==1):
+            return 'False'
+        if(nDiff==0):
+            return 'Same'
+        if(nDiff%3==2):
+            return 'True'
+
+    def printf(self):
+        return 'Scissors'
